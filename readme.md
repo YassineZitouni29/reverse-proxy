@@ -27,6 +27,7 @@ Reverse-Proxy/
 │
 ├── main.go
 ├── go.mod          # Go module definition
+```
 
 
 ## ✅ Project TODO Checklist
