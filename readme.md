@@ -6,44 +6,28 @@ This project is built **incrementally**, starting from a minimal working proxy a
 
 ---
 
-##  Project Objectives
+## Project Structure
 
-- Understand how reverse proxies work internally
-- Implement multiple **load-balancing strategies**
-- Practice **concurrent programming** in Go
-- Design a **clean and extensible architecture**
-
----
-
-##  Design Philosophy
-
-- **Incremental development**: start simple, improve step by step
-- **Clear abstractions** using interfaces
-- **Thread safety first** (mutexes, atomics, contexts)
-- **Graceful failure handling** instead of crashes
-
----
-
-##  Project Structure
-
+```text
 Reverse-Proxy/
 │
-├── admin/ # Admin API (monitoring & management)
-│ └── admin.go
+├── admin/          # Admin API (monitoring & management)
+│   └── admin.go
 │
-├── client/ # Simple HTTP client (testing purposes)
-│ └── client.go
+├── client/         # Simple HTTP client (testing purposes)
+│   └── client.go
 │
-├── server/ # Reverse proxy HTTP server
-│ └── server.go
+├── server/         # Reverse proxy HTTP server
+│   └── server.go
 │
-├── serverPool/ # Backend & server pool management & load balancer interface
-│ └── serverPool.go  
+├── serverPool/     # Backend & server pool management & load balancer interface
+│   └── serverPool.go
 │
-├── config.json # Proxy configuration
+├── config.json     # Proxy configuration
 │
 ├── main.go
-├── go.mod # Go module definition
+├── go.mod          # Go module definition
+
 
 ## ✅ Project TODO Checklist
 
