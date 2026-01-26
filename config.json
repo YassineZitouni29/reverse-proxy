@@ -1,0 +1,12 @@
+{   
+
+    "strategy": "round-robin",
+    "urls":[
+        "http://localhost:9000",
+        "http://localhost:9001",
+        "http://localhost:9002"
+    ],
+    "proxyPort": "8080",
+    "adminPort" : "8081",
+    "healthCheckFreq": "5ms"
+}
