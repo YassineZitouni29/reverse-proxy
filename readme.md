@@ -71,9 +71,9 @@ Reverse-Proxy/
 
 ### 🔹 Admin API
 - [x] Run admin API on a separate port
-- [ ] `GET /status` — show backend health and connection counts
-- [ ] `POST /backends` — add a new backend dynamically
-- [ ] `DELETE /backends` — remove an existing backend
+- [x] `GET /status` — show backend health and connection counts
+- [x] `POST /backends` — add a new backend dynamically
+- [x] `DELETE /backends` — remove an existing backend
 - [ ] Validate input and handle duplicate backend URLs
 - [ ] Return JSON responses
 
