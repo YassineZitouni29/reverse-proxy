@@ -70,7 +70,7 @@ Reverse-Proxy/
 ---
 
 ### 🔹 Admin API
-- [ ] Run admin API on a separate port
+- [x] Run admin API on a separate port
 - [ ] `GET /status` — show backend health and connection counts
 - [ ] `POST /backends` — add a new backend dynamically
 - [ ] `DELETE /backends` — remove an existing backend
@@ -83,7 +83,7 @@ Reverse-Proxy/
 - [x] Load proxy configuration from `config.json`
 - [ ] Support command-line flag `--config`
 - [x] Initialize server pool from configuration
-- [ ] Start proxy server and admin API concurrently
+- [x] Start proxy server and admin API concurrently
 
 ---
 
