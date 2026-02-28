@@ -65,7 +65,6 @@ Reverse-Proxy/
 - [x] Use `time.Ticker` for periodic health checks
 - [x] Ping backend servers to verify availability
 - [x] Update backend alive status safely
-- [ ] Log backend state changes (UP / DOWN)
 
 ---
 
@@ -74,14 +73,12 @@ Reverse-Proxy/
 - [x] `GET /status` — show backend health and connection counts
 - [x] `POST /backends` — add a new backend dynamically
 - [x] `DELETE /backends` — remove an existing backend
-- [ ] Validate input and handle duplicate backend URLs
-- [ ] Return JSON responses
+
 
 ---
 
 ### 🔹 Configuration & Startup
 - [x] Load proxy configuration from `config.json`
-- [ ] Support command-line flag `--config`
 - [x] Initialize server pool from configuration
 - [x] Start proxy server and admin API concurrently
 
@@ -96,15 +93,4 @@ Reverse-Proxy/
 
 ### 🔹 Graceful Behavior
 - [x] Handle client cancellation using `context.Context`
-- [ ] Cancel backend requests if client disconnects
-- [ ] Handle backend timeouts gracefully
 
----
-
-
-### 🔹 Optional Enhancements
-- [ ] Sticky sessions (IP / cookie-based)
-- [ ] Weighted load balancing
-- [ ] HTTPS / TLS support
-- [ ] Backend persistence
-- [ ] Metrics (request count, latency, error rate)
